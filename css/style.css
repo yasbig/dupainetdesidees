@@ -17,9 +17,10 @@
   --radius:12px;
   --nav-h:72px;
 }
-html{scroll-behavior:smooth;font-size:16px}
-body{font-family:var(--f-body);color:var(--c-text);background:var(--c-bg);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+html{scroll-behavior:smooth;font-size:16px;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);color:var(--c-text);background:var(--c-bg);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;overflow-wrap:break-word;word-wrap:break-word}
+img{max-width:100%;height:auto;display:block}
+iframe{max-width:100%}
 a{color:inherit;text-decoration:none}
 ul{list-style:none}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
@@ -88,7 +89,7 @@ ul{list-style:none}
 .intro-text h2{font-family:var(--f-display);font-size:2rem;font-weight:600;line-height:1.3;margin-bottom:24px;letter-spacing:-.02em}
 .intro-text p{color:var(--c-text-light);margin-bottom:16px}
 .intro-visual{display:flex;flex-direction:column;gap:16px}
-.intro-card{background:var(--c-cream);padding:0;border-radius:var(--radius);display:flex;align-items:center;gap:0;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s;text-decoration:none}
+.intro-card{background:var(--c-cream);padding:0;border-radius:var(--radius);display:flex;align-items:center;gap:0;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s;text-decoration:none;width:100%}
 .intro-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.06)}
 .intro-card-img{width:120px;height:100%;min-height:100px;flex-shrink:0;overflow:hidden}
 .intro-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
@@ -315,18 +316,11 @@ ul{list-style:none}
 @media(max-width:1024px){
   .intro-grid,.philosophie-grid,.atelier-grid,.livre-grid,.contact-grid,.etab-detail-grid{grid-template-columns:1fr;gap:48px}
   .etab-grid{grid-template-columns:1fr 1fr}
-  .intro-visual{flex-direction:row;flex-wrap:wrap}
-  .intro-card{flex:1;min-width:200px}
-}
-
-  .etab-grid,.home-cta-grid,.produits-categories,.catalogue-grid{grid-template-columns:1fr}
-  .produits-stats{gap:32px}
-  .stat-number{font-size:2.5rem}
-  .footer-inner{flex-direction:column;text-align:center}
-  .footer-copy{text-align:center}
-  .newsletter-form{flex-direction:column}
+  .catalogue-grid{grid-template-columns:repeat(2,1fr)}
+  .intro-visual{flex-direction:column}
 }
 @media(max-width:768px){
+  .container{padding:0 16px}
   .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:var(--c-bg);flex-direction:column;justify-content:center;align-items:center;gap:28px;padding:80px 24px 40px;z-index:99;transition:opacity .3s}
   .nav-links.open{display:flex}
   .nav-links a{font-size:1.4rem;font-weight:500;color:var(--c-text)!important}
@@ -337,9 +331,31 @@ ul{list-style:none}
   .nav-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
   .hero-video-page .nav-links.open a{color:var(--c-text)!important}
   .hero-video-page .nav-links.open .nav-cta{background:var(--c-accent)!important;color:#fff!important}
+  .etab-grid,.home-cta-grid,.produits-categories,.catalogue-grid{grid-template-columns:1fr}
+  .intro-visual{flex-direction:column}
+  .intro-card{width:100%}
+  .produits-stats{gap:32px}
+  .stat-number{font-size:2.5rem}
+  .footer-inner{flex-direction:column;text-align:center}
+  .footer-copy{text-align:center}
+  .newsletter-form{flex-direction:column}
+  .hero-title{font-size:3.2rem}
+  .hero-quote-centered blockquote{font-size:1.1rem}
+  .hero-quote-section{padding:60px 0}
+  .atelier-grid{grid-template-columns:1fr}
+  .livre-grid{grid-template-columns:1fr}
+  .map-embed{height:280px}
+  .filters-bar{gap:8px}
+  .filter-btn{padding:8px 16px;font-size:.8rem}
+  .page-section{padding:60px 0}
+  .philosophie-card{padding:28px}
+  .produit-categorie{padding:28px}
+  .catalogue-body{padding:20px}
 }
 @media(max-width:480px){
-  .hero-title{font-size:2.8rem}
-  .page-header h1{font-size:2.5rem}
+  .hero-title{font-size:2.5rem}
+  .page-header h1{font-size:2rem}
   .produits-stats{flex-direction:column;gap:24px}
+  .hero-quote-section{padding:40px 0}
+  .founder-quote{padding:60px 0}
 }
