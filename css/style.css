@@ -51,6 +51,11 @@ ul{list-style:none}
 .hero-bg-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,22,18,.3) 0%,rgba(26,22,18,.55) 100%);z-index:1}
 .hero-video .hero-content,.hero-video .hero-scroll{position:relative;z-index:2}
+.hero-video~.footer,.hero-video+.hero-quote-section+.footer{background:var(--c-dark)}
+.hero-video-page .nav:not(.scrolled) .nav-logo,.hero-video-page .nav:not(.scrolled) .nav-links a{color:#fff}
+.hero-video-page .nav:not(.scrolled) .nav-cta{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);color:#fff}
+.hero-video-page .nav:not(.scrolled) .nav-cta:hover{background:rgba(255,255,255,.25)}
+.hero-video-page .nav:not(.scrolled) .nav-toggle span{background:#fff}
 .hero-video .hero-title,.hero-video .hero-tag,.hero-video .hero-sub,.hero-video .hero-scroll{color:#fff}
 .hero-video .hero-scroll-line{background:#fff}
 .hero-video-toggle{position:absolute;bottom:24px;right:24px;z-index:3;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);color:#fff;width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:.8rem;display:flex;align-items:center;justify-content:center;transition:background .3s}
