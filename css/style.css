@@ -38,7 +38,7 @@ ul{list-style:none}
 .nav-logo{font-family:var(--f-display);font-size:1.15rem;font-weight:600;letter-spacing:-.02em;color:var(--c-text)}
 .nav-links{display:flex;gap:32px;align-items:center}
 .nav-links a{font-size:.875rem;font-weight:500;color:var(--c-text-light);transition:color .3s;letter-spacing:.01em}
-.nav-links a:hover{color:var(--c-accent)}
+.nav-links a:hover,.nav-links a.active{color:var(--c-accent)}
 .nav-cta{background:var(--c-accent)!important;color:#fff!important;padding:10px 22px;border-radius:100px;font-weight:500;transition:background .3s!important}
 .nav-cta:hover{background:var(--c-accent-dark)!important}
 .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
@@ -185,9 +185,85 @@ ul{list-style:none}
 .reveal-up{transform:translateY(40px)}
 .reveal.visible,.reveal-left.visible,.reveal-right.visible,.reveal-up.visible{opacity:1;transform:translate(0)}
 
+/* ===== PAGE HEADER ===== */
+.page-header{padding:calc(var(--nav-h) + 80px) 0 60px;text-align:center;background:linear-gradient(180deg,var(--c-cream) 0%,var(--c-bg) 100%)}
+.page-header h1{font-family:var(--f-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:700;letter-spacing:-.03em;margin-bottom:12px}
+.page-header-sub{font-size:1.1rem;color:var(--c-text-light);font-weight:300;max-width:600px;margin:0 auto}
+
+/* ===== PAGE SECTION ===== */
+.page-section{padding:100px 0}
+.page-section.bg-cream{background:var(--c-cream)}
+.page-intro{max-width:800px;margin:0 auto;text-align:center}
+.page-intro p{font-size:1.1rem;color:var(--c-text-light);line-height:1.9}
+
+/* ===== HOME CTA CARDS ===== */
+.home-cta{padding:100px 0}
+.home-cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.home-cta-card{display:block;background:var(--c-cream);padding:48px 32px;border-radius:var(--radius);text-align:center;transition:transform .4s var(--ease),box-shadow .4s}
+.home-cta-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.07)}
+.home-cta-icon{font-size:3rem;display:block;margin-bottom:16px}
+.home-cta-card h3{font-family:var(--f-display);font-size:1.3rem;margin-bottom:8px}
+.home-cta-card p{color:var(--c-text-light);font-size:.95rem}
+
+/* ===== ETAB DETAIL ===== */
+.etab-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.etab-detail-grid.reverse{direction:rtl}
+.etab-detail-grid.reverse>*{direction:ltr}
+.etab-detail-icon{font-size:3rem;display:block;margin-bottom:16px}
+.etab-detail-text h2{font-family:var(--f-display);font-size:clamp(2rem,4vw,2.8rem);margin-bottom:20px}
+.etab-detail-text p{color:var(--c-text-light);margin-bottom:16px;line-height:1.8}
+.etab-detail-text address{font-style:normal;font-size:.95rem;color:var(--c-accent);margin-top:24px;line-height:1.7}
+.etab-detail-placeholder{width:100%;height:360px;background:var(--c-cream);border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid rgba(0,0,0,.04)}
+.etab-detail-placeholder span{font-size:4rem;margin-bottom:16px}
+.etab-detail-placeholder p{font-family:var(--f-display);font-size:1.1rem;color:var(--c-text-light);line-height:1.6}
+
+/* ===== PRODUITS CAT ===== */
+.produits-categories{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.produit-categorie{background:var(--c-bg);padding:40px;border-radius:var(--radius);transition:transform .4s var(--ease),box-shadow .4s}
+.produit-categorie:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.07)}
+.produit-categorie-icon{font-size:2.5rem;margin-bottom:16px}
+.produit-categorie h3{font-family:var(--f-display);font-size:1.3rem;margin-bottom:12px}
+.produit-categorie p{color:var(--c-text-light);font-size:.95rem;margin-bottom:16px}
+.produit-categorie ul{list-style:none}
+.produit-categorie li{padding:6px 0;font-size:.9rem;color:var(--c-text-light);display:flex;align-items:center;gap:8px}
+.produit-categorie li::before{content:'\2713';color:var(--c-accent);font-weight:600;font-size:.8rem}
+
+/* ===== TIMELINE ===== */
+.timeline{max-width:700px;margin:0 auto}
+.timeline-item{display:flex;gap:32px;padding:32px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.timeline-item:last-child{border-bottom:none}
+.timeline-marker{font-family:var(--f-display);font-size:2rem;font-weight:700;color:var(--c-gold);opacity:.5;min-width:60px}
+.timeline-content h3{font-family:var(--f-display);font-size:1.15rem;margin-bottom:8px}
+.timeline-content p{color:var(--c-text-light);font-size:.95rem}
+
+/* ===== ATELIER HERO ===== */
+.atelier-hero{padding:calc(var(--nav-h) + 80px) 0 120px;background:var(--c-dark);color:#fff}
+.atelier-hero .section-tag{color:var(--c-gold)}
+.atelier-hero h1{font-family:var(--f-display);font-size:clamp(2.5rem,5vw,4rem);margin-bottom:20px}
+.atelier-hero .atelier-text p{color:rgba(255,255,255,.7);margin-bottom:32px}
+
+/* ===== ATELIER CTA ===== */
+.atelier-cta{padding:100px 0;background:var(--c-cream)}
+.atelier-cta-inner{text-align:center;max-width:600px;margin:0 auto}
+.atelier-cta-inner h2{font-family:var(--f-display);font-size:clamp(2rem,4vw,2.8rem);margin-bottom:16px}
+.atelier-cta-inner p{color:var(--c-text-light);margin-bottom:32px}
+
+/* ===== LIVRE AVAIL ===== */
+.livre-avail-box{display:flex;align-items:center;gap:16px;background:var(--c-cream);padding:20px 28px;border-radius:var(--radius);margin-top:32px;border-left:4px solid var(--c-accent)}
+.livre-avail-box span{font-size:2rem}
+.livre-avail-box strong{color:var(--c-accent);font-size:1rem}
+.livre-avail-box p{font-size:.85rem;color:var(--c-text-light);margin:4px 0 0}
+
+/* ===== HORAIRES ===== */
+.horaires-grid{margin-top:12px}
+.horaire{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:.95rem}
+.horaire.ferme .heures{color:var(--c-accent);font-weight:500}
+.horaire .jour{color:var(--c-text)}
+.horaire .heures{color:var(--c-text-light)}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:1024px){
-  .intro-grid,.philosophie-grid,.atelier-grid,.livre-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+  .intro-grid,.philosophie-grid,.atelier-grid,.livre-grid,.contact-grid,.etab-detail-grid{grid-template-columns:1fr;gap:48px}
   .etab-grid{grid-template-columns:1fr 1fr}
   .intro-visual{flex-direction:row;flex-wrap:wrap}
   .intro-card{flex:1;min-width:200px}
@@ -196,7 +272,7 @@ ul{list-style:none}
   .nav-links{display:none;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--c-bg);flex-direction:column;padding:24px;gap:16px;box-shadow:0 12px 40px rgba(0,0,0,.08)}
   .nav-links.open{display:flex}
   .nav-toggle{display:flex}
-  .etab-grid{grid-template-columns:1fr}
+  .etab-grid,.home-cta-grid,.produits-categories{grid-template-columns:1fr}
   .produits-stats{gap:32px}
   .stat-number{font-size:2.5rem}
   .footer-inner{flex-direction:column;text-align:center}
@@ -205,5 +281,6 @@ ul{list-style:none}
 }
 @media(max-width:480px){
   .hero-title{font-size:2.8rem}
+  .page-header h1{font-size:2.5rem}
   .produits-stats{flex-direction:column;gap:24px}
 }

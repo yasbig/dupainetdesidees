@@ -4,8 +4,9 @@ Proposition de nouveau site web pour [Du Pain et Des Idées](https://www.dupaine
 
 ## ✨ Features
 
+- **Multi-pages** — 7 pages : Accueil, Philosophie, Produits, Établissements, Ateliers, Livre, Contact
 - **Design moderne** — Typographie élégante, palette chaleureuse, espacement généreux
-- **Animations fluides** — Scroll reveal, compteurs animés, parallax, marquee
+- **Animations fluides** — Scroll reveal, compteurs animés, parallax, marquee, timeline
 - **100% responsive** — Mobile, tablette, desktop
 - **Performance** — Pas de dépendances externes (hors Google Fonts), vanilla JS
 - **SEO-friendly** — Sémantique HTML5, meta description, structure claire
@@ -13,12 +14,18 @@ Proposition de nouveau site web pour [Du Pain et Des Idées](https://www.dupaine
 ## 🏗️ Structure
 
 ```
-├── index.html          # Page principale
+├── index.html            # Accueil — Hero + Intro + Citation + CTA
+├── philosophie.html      # Notre philosophie — 4 piliers
+├── produits.html         # Gamme — Pains, Viennoiseries, Tartes, Café
+├── etablissements.html   # La Boulangerie, La Table, L'Atelier
+├── atelier.html          # Atelier boulanger — Mercredi soir
+├── livre.html            # Le livre de Christophe Vasseur
+├── contact.html          # Adresse, horaires, newsletter, carte
 ├── css/
-│   └── style.css       # Styles (CSS custom properties, Grid, Flexbox)
+│   └── style.css         # Styles (CSS custom properties, Grid, Flexbox)
 ├── js/
-│   └── main.js         # Animations, navigation, compteurs
-└── assets/             # Images (à ajouter)
+│   └── main.js           # Animations, navigation, compteurs
+└── assets/               # Images (à ajouter)
 ```
 
 ## 🚀 Deployment
@@ -27,18 +34,6 @@ Ouvrir `index.html` directement, ou déployer sur :
 - GitHub Pages
 - Netlify
 - Vercel
-
-## 📋 Sections
-
-1. Hero avec citation de Marcel Pagnol
-2. Introduction — Boulangerie, Table, Atelier
-3. Philosophie — 4 piliers (fermentation, matières premières, artisanat, quartier)
-4. Produits — Marquee animée + statistiques
-5. Établissements — 3 cartes interactives
-6. Ateliers — Mercredi soir, réservation
-7. Livre — Christophe Vasseur
-8. Citation du fondateur
-9. Contact — Adresse, horaires, newsletter, carte
 
 ## ⚠️ Note
 

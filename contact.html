@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Du Pain et Des Idées</title>
+  <meta name="description" content="Trouvez Du Pain et Des Idées au 34 rue Yves Toudic, Paris 10e. Horaires, adresse, newsletter et plan d'accès.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner"><div class="loader-wheat">🌾</div><p>Du Pain et Des Idées</p></div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Du Pain et Des Idées</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="philosophie.html">Philosophie</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="etablissements.html">Établissements</a></li>
+        <li><a href="atelier.html">Ateliers</a></li>
+        <li><a href="livre.html">Livre</a></li>
+        <li><a href="contact.html" class="nav-cta active">Nous trouver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="section-tag reveal">Venir</span>
+      <h1 class="reveal">Nous trouver</h1>
+      <p class="page-header-sub reveal">Au cœur du 10e arrondissement de Paris.</p>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-item">
+            <h3>Adresse</h3>
+            <p>34 rue Yves Toudic<br>75010 Paris, France</p>
+            <a href="https://maps.google.com/?q=34+rue+Yves+Toudic+75010+Paris" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:16px">Ouvrir dans Maps →</a>
+          </div>
+          <div class="contact-item">
+            <h3>Horaires</h3>
+            <div class="horaires-grid">
+              <div class="horaire">
+                <span class="jour">Mardi</span>
+                <span class="heures">7h – 20h</span>
+              </div>
+              <div class="horaire">
+                <span class="jour">Mercredi</span>
+                <span class="heures">7h – 20h</span>
+              </div>
+              <div class="horaire">
+                <span class="jour">Jeudi</span>
+                <span class="heures">7h – 20h</span>
+              </div>
+              <div class="horaire">
+                <span class="jour">Vendredi</span>
+                <span class="heures">7h – 20h</span>
+              </div>
+              <div class="horaire">
+                <span class="jour">Samedi</span>
+                <span class="heures">7h – 20h</span>
+              </div>
+              <div class="horaire ferme">
+                <span class="jour">Dimanche</span>
+                <span class="heures">Fermé</span>
+              </div>
+              <div class="horaire ferme">
+                <span class="jour">Lundi</span>
+                <span class="heures">Fermé</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <h3>Newsletter</h3>
+            <p>Restez informé de nos nouveautés et des moments forts de nos établissements.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); this.classList.add('submitted');">
+              <input type="email" placeholder="votre@email.com" required>
+              <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+        <div class="contact-map reveal-right">
+          <div class="map-placeholder">
+            <div class="map-pin">📍</div>
+            <p>34 rue Yves Toudic<br>Paris 10e</p>
+            <a href="https://maps.google.com/?q=34+rue+Yves+Toudic+75010+Paris" target="_blank" rel="noopener" class="btn btn-outline">Ouvrir dans Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><h3>Du Pain et Des Idées</h3><p>Boulangerie artisanale et table autour du four</p></div>
+        <div class="footer-links">
+          <a href="philosophie.html">Philosophie</a><a href="produits.html">Produits</a><a href="etablissements.html">Établissements</a><a href="atelier.html">Ateliers</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy"><p>© 2002 – 2026 Du Pain et Des Idées</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
