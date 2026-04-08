@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue — Du Pain et Des Idées</title>
+  <meta name="description" content="Catalogue complet des produits Du Pain et Des Idées : pains, viennoiseries, tartes, café de spécialité. Tout fait à la main, matières premières biologiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="loader" id="loader">
+    <div class="loader-inner"><div class="loader-wheat">🌾</div><p>Du Pain et Des Idées</p></div>
+  </div>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Du Pain et Des Idées</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="philosophie.html">Philosophie</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="catalogue.html" class="active">Catalogue</a></li>
+        <li><a href="etablissements.html">Établissements</a></li>
+        <li><a href="atelier.html">Ateliers</a></li>
+        <li><a href="livre.html">Livre</a></li>
+        <li><a href="contact.html" class="nav-cta">Nous trouver</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-header">
+    <div class="container">
+      <span class="section-tag reveal">Nos créations</span>
+      <h1 class="reveal">Catalogue</h1>
+      <p class="page-header-sub reveal">Découvrez l'ensemble de nos produits, façonnés à la main chaque jour.</p>
+    </div>
+  </section>
+
+  <!-- Filtres -->
+  <section class="catalogue-filters">
+    <div class="container">
+      <div class="filters-bar reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="pains">Pains</button>
+        <button class="filter-btn" data-filter="viennoiseries">Viennoiseries</button>
+        <button class="filter-btn" data-filter="tartes">Tartes</button>
+        <button class="filter-btn" data-filter="specialites">Spécialités</button>
+        <button class="filter-btn" data-filter="boissons">Boissons</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalogue Grid -->
+  <section class="page-section">
+    <div class="container">
+      <div class="catalogue-grid">
+
+        <!-- PAINS -->
+        <div class="catalogue-card reveal-up" data-category="pains" data-delay="0">
+          <div class="catalogue-img"><span>🍞</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Pain</div>
+            <h3>Pain au levain</h3>
+            <p>Notre pain signature. Levain naturel, fermentation 48h+, cuisson sur pierre. Croûte craquante, mie alvéolée et parfumée.</p>
+            <div class="catalogue-details">
+              <span>🌾 Blés anciens bio</span>
+              <span>⏱ 48h fermentation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="pains" data-delay="50">
+          <div class="catalogue-img"><span>🥖</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Pain</div>
+            <h3>Baguette tradition</h3>
+            <p>Farine Moulins Bourgeois, pétrissage manuelle, façonnage artisanal. Croustillante à souhait.</p>
+            <div class="catalogue-details">
+              <span>🌾 Farine sur mesure</span>
+              <span>✋ Faite à la main</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="pains" data-delay="100">
+          <div class="catalogue-img"><span>🫓</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Pain</div>
+            <h3>Pain des amis</h3>
+            <p>Un pain généreux, idéal pour partager. Mie moelleuse, saveur profonde. Parfait pour les repas entre amis.</p>
+            <div class="catalogue-details">
+              <span>🌾 12 blés anciens</span>
+              <span>❤️ À partager</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="pains" data-delay="150">
+          <div class="catalogue-img"><span>🥜</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Pain</div>
+            <h3>Pain aux noix</h3>
+            <p>Noix entières dans une mie dense et parfumée. Un classique revisité avec des matières premières d'exception.</p>
+            <div class="catalogue-details">
+              <span>🌰 Noix entières</span>
+              <span>🌾 Levain naturel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="pains" data-delay="200">
+          <div class="catalogue-img"><span>🫒</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Pain</div>
+            <h3>Fougasse aux olives</h3>
+            <p>Pâte fine et croustillante, olives de qualité. Parfaite en apéritif ou en accompagnement.</p>
+            <div class="catalogue-details">
+              <span>🫒 Olives sélectionnées</span>
+              <span>🔥 Cuisson sur pierre</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- VIENNOISERIES -->
+        <div class="catalogue-card reveal-up" data-category="viennoiseries" data-delay="0">
+          <div class="catalogue-img"><span>🥐</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Viennoiserie</div>
+            <h3>Croissant au beurre AOP</h3>
+            <p>Beurre AOP Charentes-Poitou, tourage fait à la main. Feuilletage croustillant, cœur fondant. Le matin, rien de mieux.</p>
+            <div class="catalogue-details">
+              <span>🧈 Beurre AOP</span>
+              <span>✋ Tourage manuel</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="viennoiseries" data-delay="50">
+          <div class="catalogue-img"><span>🍎</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Viennoiserie</div>
+            <h3>Chausson aux pommes</h3>
+            <p>Pommes de saison, pâte feuilletée maison. Un classique indémodable, préparé avec des fruits du calendrier.</p>
+            <div class="catalogue-details">
+              <span>🍎 Pommes de saison</span>
+              <span>🥧 Pâte maison</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="viennoiseries" data-delay="100">
+          <div class="catalogue-img"><span>🍫</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Viennoiserie</div>
+            <h3>Pain au chocolat</h3>
+            <p>Chocolat sans lécithine de soja, riche en beurre de cacao. Pâte feuilletée maison, croustillante et fondante.</p>
+            <div class="catalogue-details">
+              <span>🍫 Chocolat pur</span>
+              <span>🧈 Beurre AOP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TARTES -->
+        <div class="catalogue-card reveal-up" data-category="tartes" data-delay="0">
+          <div class="catalogue-img"><span>🥧</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Tarte</div>
+            <h3>Tarte aux fruits de saison</h3>
+            <p>Selon le calendrier des récoltes. Pâte maison, fruits frais, zéro ingrédient transformé. Change chaque semaine.</p>
+            <div class="catalogue-details">
+              <span>📅 Selon saison</span>
+              <span>🌿 Zéro transformé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="tartes" data-delay="50">
+          <div class="catalogue-img"><span>🍋</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Tarte</div>
+            <h3>Tarte au citron</h3>
+            <p>Citrons frais, meringue maison, pâte sablée croustillante. Un équilibre parfait entre acidité et douceur.</p>
+            <div class="catalogue-details">
+              <span>🍋 Citrons frais</span>
+              <span>🥚 Œufs bio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="tartes" data-delay="100">
+          <div class="catalogue-img"><span>🍫</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Tarte</div>
+            <h3>Tarte au chocolat</h3>
+            <p>Chocolat riche en beurre de cacao, sans lécithine de soja. Fondante, intense, sans compromis.</p>
+            <div class="catalogue-details">
+              <span>🍫 Chocolat pur</span>
+              <span>🧈 Beurre de cacao</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECIALITES -->
+        <div class="catalogue-card reveal-up" data-category="specialites" data-delay="0">
+          <div class="catalogue-img"><span>🍰</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Spécialité</div>
+            <h3>Le savarin</h3>
+            <p>Brioche imbibée au sirop, crème chantilly maison. Une spécialité généreuse, héritière de la tradition française.</p>
+            <div class="catalogue-details">
+              <span>🍯 Sirop artisanal</span>
+              <span>🍦 Chantilly maison</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="specialites" data-delay="50">
+          <div class="catalogue-img"><span>🧁</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Spécialité</div>
+            <h3>Financiers</h3>
+            <p>Poudre d'amandes bio, beurre noisette, œufs bio. Petit format, grande gourmandise.</p>
+            <div class="catalogue-details">
+              <span>🥜 Amandes bio</span>
+              <span>🧈 Beurre noisette</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="specialites" data-delay="100">
+          <div class="catalogue-img"><span>🍪</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Spécialité</div>
+            <h3>Sablés maison</h3>
+            <p>Beurre AOP, sucre complet bio, farine ancienne. Croustillants, parfumés, irrésistibles.</p>
+            <div class="catalogue-details">
+              <span>🧈 Beurre AOP</span>
+              <span>🌾 Sucre complet bio</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOISSONS -->
+        <div class="catalogue-card reveal-up" data-category="boissons" data-delay="0">
+          <div class="catalogue-img"><span>☕</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Boisson</div>
+            <h3>Café de spécialité</h3>
+            <p>Torréfaction artisanale à Paris. Pas de café brûlé — un café vivant, fruité, servi à la boulangerie et à la Table.</p>
+            <div class="catalogue-details">
+              <span>🔥 Torréfaction parisienne</span>
+              <span>☕ Spécialité</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalogue-card reveal-up" data-category="boissons" data-delay="50">
+          <div class="catalogue-img"><span>🍵</span></div>
+          <div class="catalogue-body">
+            <div class="catalogue-tag">Boisson</div>
+            <h3>Thé & infusions</h3>
+            <p>Sélection de thés et infusions de qualité. Pour accompagner un moment de douceur à la Table.</p>
+            <div class="catalogue-details">
+              <span>🌿 Sélection qualité</span>
+              <span>🫖 Servi à la Table</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Note catalogue -->
+  <section class="catalogue-note">
+    <div class="container">
+      <div class="catalogue-note-inner reveal">
+        <span>📋</span>
+        <div>
+          <h3>Produits frais, faits maison</h3>
+          <p>Tous nos produits sont fabriqués quotidiennement dans notre fournil. La gamme peut varier selon les saisons et les arrivages. N'hésitez pas à nous contacter pour toute question sur nos disponibilités.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><h3>Du Pain et Des Idées</h3><p>Boulangerie artisanale et table autour du four</p></div>
+        <div class="footer-links">
+          <a href="philosophie.html">Philosophie</a><a href="produits.html">Produits</a><a href="catalogue.html">Catalogue</a><a href="etablissements.html">Établissements</a><a href="atelier.html">Ateliers</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy"><p>© 2002 – 2026 Du Pain et Des Idées</p></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Catalogue filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.catalogue-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+            setTimeout(() => card.style.opacity = '1', 10);
+          } else {
+            card.style.opacity = '0';
+            setTimeout(() => card.style.display = 'none', 300);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
