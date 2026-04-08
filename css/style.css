@@ -48,7 +48,7 @@ ul{list-style:none}
 /* ===== HERO ===== */
 .hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 24px;position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(184,92,46,.06) 0%,transparent 70%),radial-gradient(ellipse at 80% 80%,rgba(201,169,110,.08) 0%,transparent 50%);z-index:0}
-.hero-video{position:relative;overflow:hidden;height:100vh;height:100dvh}
+.hero-video{position:relative;overflow:hidden;height:100vh;height:100dvh;background-size:cover;background-position:center;background-repeat:no-repeat}
 .hero-bg-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,22,18,.3) 0%,rgba(26,22,18,.55) 100%);z-index:1}
 .hero-video .hero-content,.hero-video .hero-scroll{position:relative;z-index:2}
@@ -353,6 +353,9 @@ ul{list-style:none}
   .philosophie-card{padding:28px}
   .produit-categorie{padding:28px}
   .catalogue-body{padding:20px}
+}
+@media(max-width:768px){
+  .hero-bg-video{display:none}
 }
 @media(max-width:480px){
   .hero-title{font-size:2.5rem}
