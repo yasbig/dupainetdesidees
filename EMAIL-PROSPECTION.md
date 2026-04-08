@@ -16,7 +16,9 @@ J'ai aussi visité votre site actuel. Il transmet votre histoire, mais il ne ref
 
 J'ai entièrement conçu un nouveau site pour Du Pain et Des Idées — de mon initiative, sans engagement. Juste pour vous montrer ce qui est possible.
 
-🔗 **Démo en ligne :** https://yasbig.github.io/dupainetdesidees/
+🔗 **Démo en ligne :** [lien à insérer après hébergement]
+
+Quelques détails restent à peaufiner (certaines photos, ajustements de contenu), mais **l'essentiel est là** — la structure, le design, les animations, le catalogue interactif. C'est une vraie base solide, pas un template.
 
 **Ce que j'ai intégré :**
 
@@ -35,7 +37,7 @@ J'ai entièrement conçu un nouveau site pour Du Pain et Des Idées — de mon i
 3. **Héberger et maintenir** le site — mises à jour, sécurité, performances
 4. **Mettre en ligne** sur votre nom de domaine actuel (dupainetdesidees.com)
 
-Le site que vous voyez est une **base solide et fonctionnelle**. Ce n'est pas un template générique — tout a été pensé spécifiquement pour votre boulangerie, votre philosophie, votre quartier.
+Le site que vous voyez est une **base pensée spécifiquement pour votre boulangerie**, votre philosophie, votre quartier. Ce n'est pas un template générique.
 
 **Je serais ravi d'en discuter 15-20 minutes avec vous** — par téléphone, en visio, ou même autour d'un café si vous êtes au fournil. Pas de pression commerciale, juste une conversation entre quelqu'un qui fait du pain avec passion et quelqu'un qui construit des sites avec la même attention au détail.
 
@@ -48,7 +50,3 @@ Merci pour le pain que vous faites. Il est vraiment bon.
 Bien à vous,
 
 **Yassine**
-
----
-
-*P.S. — Si vous voulez voir le code source du site : https://github.com/yasbig/dupainetdesidees*
