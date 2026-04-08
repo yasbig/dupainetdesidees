@@ -39,9 +39,12 @@
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
+  <!-- Hero with Video -->
+  <section class="hero hero-video" id="hero">
+    <video class="hero-bg-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+      <source src="assets/video/hero-desktop.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <p class="hero-tag reveal">Boulangerie artisanale fondée en 2002</p>
       <h1 class="hero-title reveal">
@@ -55,11 +58,21 @@
         <div class="hero-scroll-line"></div>
       </a>
     </div>
-    <div class="hero-quote reveal">
-      <blockquote>
-        «&nbsp;Je vous ferai un pain comme vous n'en avez jamais vu, et dans ce pain, il y aura de l'amour, et aussi beaucoup d'amitié.&nbsp;»
-        <cite>— Marcel Pagnol, <em>La Femme du Boulanger</em></cite>
-      </blockquote>
+    <button class="hero-video-toggle" id="videoToggle" aria-label="Pause video">
+      <span class="pause-icon">❚❚</span>
+      <span class="play-icon" style="display:none">▶</span>
+    </button>
+  </section>
+
+  <!-- Quote -->
+  <section class="hero-quote-section">
+    <div class="container">
+      <div class="hero-quote reveal">
+        <blockquote>
+          «&nbsp;Je vous ferai un pain comme vous n'en avez jamais vu, et dans ce pain, il y aura de l'amour, et aussi beaucoup d'amitié.&nbsp;»
+          <cite>— Marcel Pagnol, <em>La Femme du Boulanger</em></cite>
+        </blockquote>
+      </div>
     </div>
   </section>
 
@@ -74,21 +87,21 @@
         </div>
         <div class="intro-visual reveal-right">
           <a href="etablissements.html#boulangerie" class="intro-card">
-            <div class="intro-card-icon">🍞</div>
+            <div class="intro-card-img"><img src="assets/images/bread-artisan.jpg" alt="La Boulangerie" loading="lazy"></div>
             <div>
               <h3>La Boulangerie</h3>
               <p>L'histoire, le fournil, le pain</p>
             </div>
           </a>
           <a href="etablissements.html#table" class="intro-card">
-            <div class="intro-card-icon">🍷</div>
+            <div class="intro-card-img"><img src="assets/images/boulangerie-interieur.jpg" alt="La Table" loading="lazy"></div>
             <div>
               <h3>La Table</h3>
               <p>Convivialité autour du four</p>
             </div>
           </a>
           <a href="etablissements.html#atelier-lieu" class="intro-card">
-            <div class="intro-card-icon">✋</div>
+            <div class="intro-card-img"><img src="assets/images/mains-petrissage.jpg" alt="L'Atelier" loading="lazy"></div>
             <div>
               <h3>L'Atelier</h3>
               <p>Transmission et création</p>
@@ -114,17 +127,17 @@
     <div class="container">
       <div class="home-cta-grid reveal">
         <a href="philosophie.html" class="home-cta-card">
-          <span class="home-cta-icon">📖</span>
+          <div class="home-cta-img"><img src="assets/images/sourdough-closeup.jpg" alt="Philosophie" loading="lazy"></div>
           <h3>Notre philosophie</h3>
           <p>Faire peu, mais faire bien</p>
         </a>
         <a href="produits.html" class="home-cta-card">
-          <span class="home-cta-icon">🥖</span>
+          <div class="home-cta-img"><img src="assets/images/viennoiseries.jpg" alt="Produits" loading="lazy"></div>
           <h3>Nos produits</h3>
           <p>Gamme courte, sans compromis</p>
         </a>
         <a href="atelier.html" class="home-cta-card">
-          <span class="home-cta-icon">🤲</span>
+          <div class="home-cta-img"><img src="assets/images/mains-petrissage.jpg" alt="Ateliers" loading="lazy"></div>
           <h3>Ateliers</h3>
           <p>Apprendre à faire du pain</p>
         </a>
@@ -143,6 +156,7 @@
         <div class="footer-links">
           <a href="philosophie.html">Philosophie</a>
           <a href="produits.html">Produits</a>
+          <a href="catalogue.html">Catalogue</a>
           <a href="etablissements.html">Établissements</a>
           <a href="atelier.html">Ateliers</a>
           <a href="contact.html">Contact</a>
@@ -155,5 +169,16 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Video toggle
+    const video = document.querySelector('.hero-bg-video');
+    const toggle = document.getElementById('videoToggle');
+    if (video && toggle) {
+      toggle.addEventListener('click', () => {
+        if (video.paused) { video.play(); toggle.querySelector('.pause-icon').style.display=''; toggle.querySelector('.play-icon').style.display='none'; }
+        else { video.pause(); toggle.querySelector('.pause-icon').style.display='none'; toggle.querySelector('.play-icon').style.display=''; }
+      });
+    }
+  </script>
 </body>
 </html>
